@@ -14,3 +14,5 @@ end
 p1 = sum(diferentes)/N;
 p2 = 1-p1;
 fprintf('Alinea a): probabilidade = %.6f \n', p1);
+
+fprintf('Alinea b): probabilidade = %.6f \n', p2);

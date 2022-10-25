@@ -6,3 +6,4 @@ nrfam1rapaz = sum(sum(fam) >= 1);
 nrfam2rapazes = sum(sum(fam) == 2);
 
 prob = nrfam2rapazes/nrfam1rapaz
+
