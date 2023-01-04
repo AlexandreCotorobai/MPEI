@@ -5,7 +5,7 @@ imax=20;
 alfabeto = ['a':'z' 'A':'Z'];
 
 
-
+%% Alinea a)
 words = generate_uniform(N,imin,imax,alfabeto);
 
 %% criar a tabela
@@ -16,7 +16,8 @@ for T=[5e5 1e6 2e6]
     
     atribuicoes=zeros(1,T);
     
-    %% processar as palavras 1 a 1
+    %% Alinea b)
+    % processar as palavras 1 a 1
     
     hashcodes=zeros(1,N);
     
@@ -29,19 +30,21 @@ for T=[5e5 1e6 2e6]
         atribuicoes(hash)=atribuicoes(hash)+1; % contagem de quantas palavras estao em cada bucket
     end
     
-    %% hist
+    % hist
     figure("Name","Histograma Hashcodes")
     hist(hashcodes,100);
     xlabel("hashcodes");
     
-    %% hist atrib
+    % hist atrib
     figure("Name", "Histograma de atribuicoes")
     hist(atribuicoes, 0:1:5);
     
-    %% num colisoes
-    
+    %% Alinea c)
+    % num colisoes
     ncol=sum(atribuicoes>1);
     perc=ncol/T*100;
     fprintf(1,"T=%d, ncol = %d, percent = %.3f\n",T,ncol,perc);
+
+    %% Alinea d)
     toc % print elapsed time
 end
