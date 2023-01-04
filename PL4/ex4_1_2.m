@@ -41,28 +41,6 @@ for T=[5e5 1e6 2e6]
         %disp(hash);
         hashcodes(i)=hash; % listagem de todos os hashcodes
         atribuicoes(hash)=atribuicoes(hash)+1; % contagem de quantas palavras estao em cada bucket
-
-        %% aplicar hashfunction
-        %hash=string2hash(words{i}, 'sdbm');
-        %hash=rem(hash,T)+1;
-        %disp(hash);
-        %hashcodes2(i)=hash; % listagem de todos os hashcodes
-        %atribuicoes(hash)=atribuicoes(hash)+1; % contagem de quantas palavras estao em cada bucket
-
-        %% aplicar hashfunction
-        %hash=hashstring(words{i}, T)+1;
-        %hash=rem(hash,T)+1;
-        %disp(hash);
-        %hashcodes3(i)=hash; % listagem de todos os hashcodes
-        %atribuicoes(hash)=atribuicoes(hash)+1; % contagem de quantas palavras estao em cada bucket
-  
-        %% aplicar hashfunction
-        %hash=DJB31MA(words{i}, T);
-        %hash=rem(hash,T)+1;
-        %disp(hash);
-        %hashcodes4(i)=hash; % listagem de todos os hashcodes
-        %atribuicoes(hash)=atribuicoes(hash)+1; % contagem de quantas palavras estao em cada bucket
-
     end
     
     % hist
