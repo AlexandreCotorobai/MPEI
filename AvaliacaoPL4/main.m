@@ -22,6 +22,8 @@ while(choice ~= 5)
             findUsers(Set, id, users_names);
         case 2
             disp("Executing 2")
+            [J] = distancia(MinHash, Set, id, filmes_info, users_names);
+
         case 3
             disp("Executing 3")
         case 4
@@ -30,3 +32,4 @@ while(choice ~= 5)
 
     choice = menu(msg,opts);
 end
+id = 0;

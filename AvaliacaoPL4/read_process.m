@@ -4,6 +4,7 @@ clc;
 
 udata = load('u.data');
 users = readcell('users.txt','Delimiter',';');
+filmes_info = readcell('film_info.txt','Delimiter','\t');
 
 users_names = users(:,2);
 [Set,Nu, filmes] = make_set(udata);
