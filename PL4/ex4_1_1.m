@@ -6,7 +6,7 @@ imin = 6;
 imax = 20;
 N=10;
 
-words = generate_uniform(N, imin, imax, alfabeto)
+words = generate_uniform(N, imin, imax, alfabeto, [0.4 0.6])
 
 %% Alinea b)
 clear;
